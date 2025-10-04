@@ -1,14 +1,67 @@
 
+body{
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
 header{
-    display:flex;
-    justify-content: center;
-    color:white;
-    background-color: black;
-    padding: 20px;
+    display:block;
+    color:white
+}
+
+h1, h2{
+    text-align: center;
 }
 
 ul{
     list-style-type: none;
-    display:block;
 }
 
+li{
+    opacity: 0;
+}
+
+.tab{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    opacity: 1;
+    font-family: Pixelify Sans;
+    font-size: 12px;
+    color:white;
+}
+
+main{
+    margin:80px;
+    margin-top: 200px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.folder{
+    background-image: url(images/closedfolder.png);
+    background-size: cover;
+    height: 180px;
+    width: 230px;
+    transition: ease-in, 0.2s;
+}
+
+.folder:hover{
+    background-image:url(images/openfolder.png)
+}
+
+
+.page:hover{
+    opacity:1;
+    margin-left:20px;
+    font-family: Pixelify Sans;
+    font-size: 15px;
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+.page a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
