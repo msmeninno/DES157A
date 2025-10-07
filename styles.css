@@ -1,16 +1,15 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Pixelify Sans;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
 
 body{
-    margin: 0px;
-    background-color: rgb(0, 0, 0);
-}
-
-header{
-    display:block;
-    color:white
-}
-
-h1, h2{
-    text-align: center;
+    margin:0;
 }
 
 ul{
@@ -22,28 +21,41 @@ li{
 }
 
 .tab{
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
     opacity: 1;
     font-family: Pixelify Sans;
     font-size: 12px;
-    color:white;
+    color:rgb(255, 255, 255);
+    
 }
 
+/* styles folder placement */
 main{
-    margin:80px;
-    margin-top: 200px;
     display:flex;
-    justify-content: space-around;
+    margin: auto;
+    margin-top: 80px;
+    padding: 0px;
+    list-style-type: none;
+    border-radius: 50px;
+    height: 200px;
+    max-width: 1000px;
+    text-align: center;
+    animation: moveinbottom 2s ease;
+}
+
+.foldercontainer{
+     display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
 }
 
 .folder{
+    margin: -40px;
     background-image: url(images/closedfolder.png);
     background-size: cover;
     height: 180px;
     width: 230px;
     transition: ease-in, 0.2s;
+    scale: 0.7;
 }
 
 .folder:hover{
@@ -51,17 +63,76 @@ main{
 }
 
 
+
 .page:hover{
     opacity:1;
-    margin-left:20px;
     font-family: Pixelify Sans;
-    font-size: 15px;
-    background-color: white;
+    font-size: 20px;
     width: fit-content;
-    padding: 5px;
+    background-color: white;
 }
+
+
 
 .page a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+
+header{
+margin:0;
+display: flex;  
+align-items: center;
+justify-content: center;
+text-align: center;
+animation: moveintop 1.5s ease;
+padding: 10px;
+/* border-bottom: dashed pink 5px;
+border-left: dashed pink 5px;
+border-right: dashed pink 5px;
+border-bottom-left-radius: 60px;
+border-bottom-right-radius: 60px; */
+}
+
+
+
+.headertxt{
+    margin-top:30px;
+}
+
+ p{
+    display: block;
+    max-width: 350px;
+    text-align:justify;
+    margin-left: 180px;
+}
+
+.headerh1{
+margin:0;
+margin-bottom: 30px;
+}
+
+.headerh2{
+margin:0;}
+
+
+@keyframes moveintop{
+from{
+   transform: translateY(-100%);
+}
+to{
+   transform: translateY(0); 
+}
+}
+
+@keyframes moveinbottom{
+    from{
+   transform: translateY(300%);
+}
+to{
+   transform: translateY(0); 
+}
 }
