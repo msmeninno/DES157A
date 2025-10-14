@@ -88,6 +88,7 @@ text-align: center;
 
 .post{
   line-height: 25px;
+max-width: 400px;
 }
 
 
@@ -95,7 +96,7 @@ text-align: center;
 
 
 footer{
-   top: 800px;
-   left: 220px;
-    position: absolute;
+margin: auto;
+ margin-top: 50px;
+ text-align: center;
 }
