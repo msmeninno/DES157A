@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p></p>
+
+<script>
+
+    function askFeel(){
+        //ask how feeling on scale of 1 to 10
+        var answer = prompt('On a scale from 1 to 10, how are you feeling today?');
+        if(answer > 0 && answer < 11){
+                var isallowed = true;
+            }
+
+        else{
+                var isallowed = false;
+            }
+        
+        if(isallowed){
+            return answer
+        }
+        else{
+            var initmsg = document.querySelector('p');
+            initmsg.innerHTML = '<p>Invalid Input</p>';
+            return null;
+        }
+    }
+
+
+    function changeTheme(mood){
+       var bg = document.querySelector('body')
+
+       if (mood == null){
+        return;
+       }
+
+       if(mood < 6){
+        var initmsg = document.querySelector('p');
+        initmsg.innerHTML = "<p>Sorry to hear that!</p>";
+        bg.style.backgroundColor = '#6699ff';
+       }
+       else if(mood < 11){
+        var initmsg = document.querySelector('p');
+        initmsg.innerHTML = "<p>Happy to hear that!</p>"
+        var happy = 
+        bg.style.backgroundColor = '#ffcc66';
+       }
+    }
+
+    var mood = askFeel();
+    changeTheme(mood);
+</script>
+</body>
+</html>
