@@ -1,0 +1,162 @@
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #031010;
+}
+.titleBackground{
+    margin: 0;
+    display:block;
+    width: 100vw;
+    height: 1100px;
+    background-image:url(images/vampbackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title{
+    color: red;
+margin: 0;
+  text-align: center;
+  font-family: Bahiana;
+  font-size:120px;
+position: relative;
+top: 40vh;
+}
+
+
+/* edit hover in JS using replacing img */
+.scrolldown{
+  position:relative;
+  left: 40%;
+  padding: 20px;
+  border-radius: 100%;
+  top: 40vh;
+  cursor: pointer;
+}
+
+
+
+.questionspace{
+    font-family: Amaranth;
+    display: block;
+    height: 70vh;
+    width: 100vw;
+    margin: auto;
+
+}
+
+
+
+form{
+
+    margin: auto;
+    margin-top: 20vh;
+
+    text-align: center;
+    background-image: url(images/qbackground.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+    color:#37E4C8;
+    
+}
+
+.questions{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+
+.qtitle{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    
+}
+
+.qsubtitle{
+    display:block;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+input[type="radio"]{
+    all:unset;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    /* border: solid #051F20 2px; */
+    background-color: #74FFE6;
+    position: relative;
+    left: 10px;
+ 
+}
+
+
+
+
+.q1label, .q2label, .q3label{
+    font-size: 28px;
+    cursor: pointer;
+     position: relative;
+    left: 15px;
+}
+
+.answer{
+border-radius: 35px;
+opacity: 0.9;
+background: #28574f;
+cursor: pointer;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: left;
+}
+
+.nxt{
+    all: unset;
+    cursor: pointer;
+    font-family: Amaranth;
+    color:#37E4C8;
+    position: relative;
+    left: 20vw;
+    bottom: 10px;
+    background-color:#2E655C;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right:15px;
+    font-size: 20px;
+    font-size: 20px;
+    opacity: .7;
+}
+
+footer{
+    margin-top: 20vh;
+    padding: 120px;
+    text-align: center;
+    background-color:#051F20;
+    color:#37E4C8;
+    font-family: Amaranth;
+}
+
+
+@media screen and (min-width: 600px){
+    .scrolldown{
+        left: 47%;
+    }
+
+    .nxt{
+        left: 8vw;
+    }
+}
