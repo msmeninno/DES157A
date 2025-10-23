@@ -223,31 +223,6 @@ cursor: pointer;
     padding-right:16px;
 }
 
-#again{
-        all: unset;
-    cursor: pointer;
-    font-family: Amaranth;
-    color:#37E4C8;
-    position: relative;
-    right: 20vw;
-    bottom: 10px;
-    background-color:#2E655C;
-    border-radius: 20px;
-    padding: 2px;
-    padding-left: 15px;
-    padding-right:15px;
-    font-size: 20px;
-    font-size: 20px;
-    opacity: .7;
-}
-
-#again:hover{
-        background-color:#031010;
-    font-size: 21px;
-      padding: 3px;
-    padding-left: 16px;
-    padding-right:16px;
-}
 
 .madlibtxt{
     font-family: Amaranth;
