@@ -12,12 +12,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="madlib.js" defer></script>
 </head>
 <body>
     <div class="titleBackground">
         <h1 class="title"> Vampire Persona</h1>
-    <img src="images/scrollbutton.png" class="scrolldown" alt="arrowbutton">
+    <a href="#scrollstart"><img src="images/scrollbutton.png" class="scrolldown" alt="arrowbutton"></a>
     </div>
+
+    <div id="scrollstart"></div>
 
     <div class="questionspace">
             <form>
@@ -28,26 +31,28 @@
                 
                 
                 <div class="answer">
-                <input type="radio" class="q1">
+                <input type="radio" name="answerinput" value="Man" class="nonSelect">
                  <label class="q1label">Man</label><br>
                 </div>
 
                 <div class="answer">
-                <input type="radio" class="q2">
+                <input type="radio" name="answerinput" value="Woman" class="nonSelect">
                  <label class="q2label">Woman</label><br>
                 </div>
 
                 <div class="answer">
-                <input type="radio" class="q3">
+                <input type="radio" name="answerinput" value="Nonbinary" class="nonSelect">
                 <label class="q3label">Nonbinary</label><br>
                  </div>
+                 <button class="hidden" id="prev">Previous</button>
                   <button class="nxt">Next</button>
+                 
                 </div>
                   
-            </form>
-
-          
+            </form> 
     </div>
+
 <footer>Designed & Developed by Meredith Meninno</footer>
+
 </body>
 </html>
