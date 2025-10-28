@@ -1,0 +1,103 @@
+
+
+html{
+margin:0;
+padding:0;
+width: 100vh;
+height: auto;
+flex-shrink: 0;
+background: linear-gradient(0deg, #FFBDD7 0%, #FFE7F0 100%);
+font-family: IBM Plex Mono;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.ropes{
+    display:flex;
+}
+
+.ropes2{
+    display:flex;
+}
+
+.rope{
+margin-left:140px;
+width: 12px;
+background-color: #846868;
+height: 80px;
+}
+
+.rope2{
+margin-left:140px;
+width: 12px;
+background-color: #846868;
+height: 40px;
+}
+
+h1{
+margin: 0;
+font-weight:600;
+width: fit-content;
+height: fit-content;
+padding:20px;
+padding-left:30px;
+padding-right:30px;
+margin-left:100px;
+flex-shrink: 0;
+border-radius: 74.349px;
+background: #FFF;
+text-align: center;
+}
+
+.class{
+    margin-top: -10px;
+    margin-left:111px;
+    width:200px;
+    scale: 0.9;
+    height:fit-content;
+    padding: 10px;
+}
+
+.tabs{
+    margin: auto;
+    display: block;
+    width: 500px;
+    height: fit-content;
+}
+
+
+.tabgroup{
+   text-align:start;
+   background-color: #FEF0F0;
+   margin-top: 40px;
+   height:fit-content;
+   width: 500px;
+   border-radius: 50px;
+   justify-items: center;
+}
+
+.tabtitle{
+    text-align: center;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+
+.post{
+  line-height: 25px;
+max-width: 400px;
+padding-bottom: 20px;
+}
+
+
+
+
+
+footer{
+margin: auto;
+ margin-top: 50px;
+ text-align: center;
+}

@@ -1,0 +1,298 @@
+
+html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #031010;
+}
+.titleBackground{
+    margin: 0;
+    display:block;
+    width: 100vw;
+    height: 1100px;
+    background-image:url(images/vampbackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title{
+    color: red;
+margin: 0;
+  text-align: center;
+  font-family: Bahiana;
+  font-size:120px;
+position: relative;
+top: 40vh;
+}
+
+
+/* edit hover in JS using replacing img */
+.scrolldown{
+  position:relative;
+  left: 45%;
+  border-radius: 100%;
+  top: 40vh; 
+  cursor: pointer;
+  animation: pulsate 2s ease-in-out infinite;
+}
+
+
+
+.questionspace{
+    font-family: Amaranth;
+    display: block;
+    height: 70vh;
+    width: 100vw;
+    margin: auto;
+    z-index: -1;
+}
+
+
+
+form{
+
+    margin: auto;
+    margin-top: 20vh;
+
+    text-align: center;
+    background-image: url(images/qbackground.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 530px;
+    width: 500px;
+    color:#37E4C8;
+    
+}
+
+.questions{
+    display: inline-block;
+    position: relative;
+    top: 5vh;
+}
+
+.qtitle{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    width: 250px;
+    position: relative;
+    top: 2vh;
+    margin-bottom: 10px;
+}
+
+.qsubtitle{
+    display:inline-block;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+       position: relative;
+}
+
+.nonSelect{
+    all:unset;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    /* border: solid #051F20 2px; */
+    background-color: #74FFE6;
+    position: relative;
+    left: 10px;
+ 
+}
+
+.warning{
+    display: block;
+    text-align: center;
+    font-family: Amaranth;
+    color:#74FFE6;
+    position: relative;
+    padding:0;
+    margin: 0;
+    top: 26vh;
+}
+.selectedR{
+    all:unset;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    /* border: solid #051F20 2px; */
+    background-color: #0f4d3d;
+    position: relative;
+    left: 10px;
+}
+
+
+
+.q1label, .q2label, .q3label{
+    font-size: 28px;
+    cursor: pointer;
+     position: relative;
+    left: 15px;
+}
+
+.answer{
+border-radius: 35px;
+opacity: 0.9;
+background: #28574f;
+cursor: pointer;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: left;
+ min-width: 350px;
+}
+
+.answer:hover{
+    background-color:#031010;
+    padding: 6px;
+    margin-bottom: 49px;
+}
+
+.selected{
+   border-radius: 35px;
+opacity: 0.9;
+background: #031010;
+border: solid 3px #74FFE6;
+cursor: pointer;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: left;
+}
+
+.nxt{
+    all: unset;
+    cursor: pointer;
+    font-family: Amaranth;
+    color:#37E4C8;
+    position: relative;
+    left: 20vw;
+    bottom: 10px;
+    background-color:#2E655C;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right:15px;
+    font-size: 20px;
+    font-size: 20px;
+    opacity: .7;
+}
+
+.nxt:hover{
+    background-color:#031010;
+    font-size: 21px;
+      padding: 3px;
+    padding-left: 16px;
+    padding-right:16px;
+}
+
+.hidden{
+    display:none;
+}
+
+.prev{
+        all: unset;
+    cursor: pointer;
+    font-family: Amaranth;
+    color:#37E4C8;
+    position: relative;
+    right: 20vw;
+    bottom: 10px;
+    background-color:#2E655C;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right:15px;
+    font-size: 20px;
+    font-size: 20px;
+    opacity: .7;
+}
+
+.prev:hover{
+        background-color:#031010;
+    font-size: 21px;
+      padding: 3px;
+    padding-left: 16px;
+    padding-right:16px;
+}
+
+
+.madlibtxt{
+    font-family: Amaranth;
+    color:#37E4C8;
+    font-size: 30px;
+    text-align: center;
+    width: 300px; 
+    position: relative;
+    top: 5vh;
+}
+
+.vampname{
+    display: inline-block;
+    font-family: Amaranth;
+    color:#37E4C8;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px; 
+    position: relative;
+    top: 5vh;
+}
+
+footer{
+    display: block;
+    margin-top: 20vh;
+    padding: 120px;
+    text-align: center;
+    background-color:#051F20;
+    color:#37E4C8;
+    font-family: Amaranth;
+    position: relative;
+}
+
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(0.8);
+        opacity: 0.8;
+        background-color: rgb(139, 10, 10);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    .scrolldown{
+        left: 48%;
+    }
+
+    .nxt{
+        left: 8vw;
+    }
+
+    .prev{
+        right: 8vw;
+    }
+
+}
+
+
+@media screen and (min-width: 1080px){
+    .titleBackground{
+        height: 1450px;
+    }
+}
