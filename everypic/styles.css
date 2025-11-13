@@ -1,0 +1,157 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 19);
+    text-align: right;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    animation: loadIn ease-in 3s;
+}
+
+
+
+#imgContain{
+    margin: auto;
+    margin-top: 8vh;
+    background-image: url(images/myroom.png);
+    background-size: cover;
+    width: 1000px;
+    height: 500px ;
+    scale: 1.15;
+}
+
+
+h1{
+    color: rgb(149, 118, 155);
+    font-family: IBM Plex Mono;
+    margin-top: 50px;
+}
+
+
+
+footer{
+    margin-top: 150px;
+    margin: auto;
+    padding-top: 150px;
+    color: rgb(190, 150, 197);
+    font-family: IBM Plex Mono;
+}
+
+/* SVG Placement */
+#posters{
+    scale:0.35;
+    position: relative;
+    right: 298.5px;
+    bottom: 95px;
+    opacity:0;
+}
+
+#posters:hover{
+    opacity: 50%;
+}
+
+#cat{
+    opacity: 0%;
+    scale: 0.83;
+    position: relative;
+    bottom: 320px;
+    left: 74px;
+}
+
+#cat:hover{
+    opacity: 40%;
+}
+
+#bear{
+    opacity: 0%;
+    position:relative;
+    scale: 0.85;
+    bottom: 310.5px;
+    right: 106px;
+}
+
+#bear:hover {
+    opacity: 40%;
+}
+
+#computer{
+    opacity: 0%;
+    position: relative;
+    scale: 0.84;
+    bottom: 323px;
+    right: 228px;
+}
+
+#computer:hover{
+    opacity: 50%;
+}
+
+#coffee{
+    opacity: 0%;
+    position: relative;
+    scale: 0.84;
+    bottom: 643px;
+    left: 534px;
+}
+
+#coffee:hover{
+    opacity: 50%;
+}
+
+#phone{
+    opacity: 0%;
+    position: relative;
+    scale: 0.84;
+    bottom: 622px;
+    left: 266px;
+}
+
+#phone:hover{
+    opacity: 50%;
+}
+
+#door{
+    opacity: 0%;
+    position: relative;
+    scale: 0.83;
+    bottom: 510px;
+    left: 85px;
+}
+
+#door:hover{
+    opacity:50%;
+}
+
+#textbox{
+    color: rgb(20, 3, 32);
+    font-family: Pixelify Sans;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgb(190, 150, 197);
+    width: 500px;
+    padding: 10px;
+    border: rgb(66, 30, 79) 5px solid;
+    text-wrap: initial;
+    
+}
+
+#txt{
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    padding: 10px;
+   width: 400px;
+   margin: auto;
+}
+
+@keyframes loadIn {
+    from{opacity: 0%}
+
+    to{opacity: 100%}
+}
