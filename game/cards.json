@@ -1,0 +1,31 @@
+[
+    {
+        "image": "card-images/kittykitty_cat-dizzy.png",
+        "name": "dizzy"  
+    },
+
+    {
+        "image": "card-images/kittykitty_cat-mad.png",
+        "name": "mad"  
+    },
+
+    {
+        "image": "card-images/kittykitty_cat-norm.png",
+        "name": "norm"  
+    },
+
+    {
+        "image": "card-images/kittykitty_cat-sad.png",
+        "name": "sad"  
+    },
+
+    {
+        "image": "card-images/kittykitty_cat-scared.png",
+        "name": "scared"  
+    },
+    
+    {
+        "image": "card-images/kittykitty_cat-sleep.png",
+        "name": "sleep"  
+    }
+]
