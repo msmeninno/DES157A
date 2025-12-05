@@ -3,9 +3,12 @@ html{
     font-family: "M PLUS Rounded 1c";
     margin: 0;
     padding: 0; 
+    color: white;
+    background-color: rgb(27, 27, 27);
 }
 
 body {
+   margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;  /* vertical centering */
@@ -17,7 +20,7 @@ body {
 
 
 #cardContainer{
-    margin-top: 20px;
+    margin-top: 5px;
     display: grid;
     justify-content: center;
     grid-gap: 16px;
@@ -52,9 +55,14 @@ body {
 }
 
 .back{
-    background-color: white;
+   background-color: rgb(27, 27, 27);
    background-image: url(card-images/kittykittystampcard.png);
     background-size: cover;
+}
+#heading{
+    margin-top: 25px;
+    font-family: "Special Elite";
+    font-size: 20px;
 }
 
 .front{
@@ -62,7 +70,7 @@ body {
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    background-color: white;
+    background-color: rgb(27, 27, 27);
     background-image: url(card-images/kittykittycardfront.png);
     background-size: cover;
 }
@@ -138,9 +146,25 @@ body {
     position: absolute;
    font-family: "Special Elite";
     color: #e30000;
-    top: 120px;
+    top: 180px;
     font-size: 30px;
 }
+
+/* .overlay{
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color:black 0.5;
+}
+
+.win{
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+} */
 
 @keyframes shake {
     0%{transform: rotateY(0deg)};

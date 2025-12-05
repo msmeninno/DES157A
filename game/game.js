@@ -38,7 +38,8 @@ var data = [
     let firstClick = true;
     let minutes = 0;
     let seconds = 0;
-   
+   const matchSound = new Audio('audio/meow-match.wav');
+   const lostSound = new Audio ('audio/meow-lost.wav')
 
     cards = [...data, ...data];
     
@@ -106,6 +107,7 @@ var data = [
     }
 
     function disableCards(){
+        matchSound.play();
         flipOne.removeEventListener("click", flipCard);
         flipTwo.removeEventListener("click", flipCard)
 
@@ -115,6 +117,7 @@ var data = [
     }
 
     function unflipCards(){
+        lostSound.play();
         stayFlipped = true;
         setTimeout(function(){
            
