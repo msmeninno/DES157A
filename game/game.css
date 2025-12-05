@@ -17,6 +17,7 @@ body {
 
 
 #cardContainer{
+    margin-top: 20px;
     display: grid;
     justify-content: center;
     grid-gap: 16px;
@@ -106,6 +107,7 @@ body {
 }
 
 #matches{
+    
     background-color: black;
     height: 40px;
     width: 180px;
@@ -133,9 +135,17 @@ body {
 }
 
 #timer{
+    position: absolute;
+   font-family: "Special Elite";
     color: #e30000;
-    margin-left: 20px;
-    font-size: 40px;
-    margin-top: 20px;
+    top: 120px;
+    font-size: 30px;
 }
 
+@keyframes shake {
+    0%{transform: rotateY(0deg)};
+    25%{transform: rotateY(-30deg)};
+    50%{transform: rotateY(0deg)};
+    75%{transform: rotateY(30deg)};
+    100%{transform: rotateY(0deg)};
+}

@@ -29,11 +29,16 @@ var data = [
 (function(){
     'use strict';
     const cardContainer = document.querySelector('#cardContainer');
+    const timer = document.querySelector("#timer");
     let cards = [];
     let flipOne, flipTwo;
     let stayFlipped = false;
     let matches = 0;
     let pairs = 6;
+    let firstClick = true;
+    let minutes = 0;
+    let seconds = 0;
+   
 
     cards = [...data, ...data];
     
@@ -52,6 +57,7 @@ var data = [
 
     function loadCards(){
         for(let card of cards){
+            
             const cardElement = document.createElement("div");
             cardElement.classList.add("card");
 
@@ -71,9 +77,14 @@ var data = [
     }
 
     function flipCard(e){
+        if (firstClick){
+            startTimer();
+            firstClick = false;
+        }
+
         if (stayFlipped) return;
         let el = e.currentTarget;
-        if(el=== flipOne) return;
+        if(el === flipOne) return;
 
         el.classList.add("flipped");
 
@@ -86,6 +97,7 @@ var data = [
        
         checkForMatch();
         updateStats();
+       
     }
 
     function checkForMatch(){
@@ -135,9 +147,30 @@ var data = [
     }
 
     function startTimer(){
-
+        
+        setTimeout(function(){
+            if(seconds < 60){
+                seconds++;
+                // if(seconds < 10 | seconds == 0){
+                //     seconds = "0" + seconds;
+                // }
+                
+            }
+            else{
+                minutes++;
+                seconds = 0;
+         }
+            startTimer();
+        }, 1000);
+        
+        //have outside of setTimeout so registers condition seconds == 0
+        if(seconds < 10 | seconds == 0){
+                    seconds = "0" + seconds;
+                }
+        timer.innerHTML = `<span id="minutes">${minutes}</span>:<span id="seconds">${seconds}</span>`
     }
 
     shuffleCards();
     loadCards();
+  
 })();
