@@ -40,8 +40,12 @@ var data = [
     let seconds = 0;
    const matchSound = new Audio('audio/meow-match.wav');
    const lostSound = new Audio ('audio/meow-lost.wav')
+    let finTime = null;
 
     cards = [...data, ...data];
+
+    const playAgain = document.querySelector("#playAgain");
+
     
     function shuffleCards(){
         let currI = cards.length;
@@ -113,6 +117,10 @@ var data = [
 
         matches++;
         pairs--;
+
+        if(pairs == 0){
+            setTimeout(showWin, 500);
+        }
         resetBoard();
     }
 
@@ -147,30 +155,44 @@ var data = [
         else{
              document.querySelector("#pairsLeft").innerHTML = `${pairs} Pairs Left`;
         }
+
     }
 
-    function startTimer(){
-        
-        setTimeout(function(){
-            if(seconds < 60){
-                seconds++;
-                // if(seconds < 10 | seconds == 0){
-                //     seconds = "0" + seconds;
-                // }
-                
-            }
-            else{
-                minutes++;
-                seconds = 0;
-         }
-            startTimer();
-        }, 1000);
-        
-        //have outside of setTimeout so registers condition seconds == 0
-        if(seconds < 10 | seconds == 0){
-                    seconds = "0" + seconds;
-                }
-        timer.innerHTML = `<span id="minutes">${minutes}</span>:<span id="seconds">${seconds}</span>`
+ function startTimer() {
+    setTimeout(function(){
+        if (pairs === 0) {
+            finTime = `${minutes}:${pad(seconds)}`;
+            return; // timer stops
+        }
+
+        seconds++;
+        if (seconds >= 60) {
+            minutes++;
+            seconds = 0;
+        }
+
+        timer.innerHTML = `${minutes}:${pad(seconds)}`;
+
+        startTimer();
+    }, 1000);
+}
+
+function pad(n){
+    return n < 10 ? "0" + n : n;
+}
+
+
+    function showWin(){
+         document.querySelector('body').innerHTML += `
+        <div class="overlay"></div>
+        <div class="win">
+        <p id="gg">Good Job!</p> 
+        <p id="fin">You finished with a time of ${finTime}</p>
+        <button id="playAgain">Play Again</button>
+        </div>`
+
+        document.querySelector("#playAgain").addEventListener('click', function(){
+            window.location.reload()});
     }
 
     shuffleCards();

@@ -20,7 +20,7 @@ body {
 
 
 #cardContainer{
-    margin-top: 5px;
+    margin-top: 45px;
     display: grid;
     justify-content: center;
     grid-gap: 16px;
@@ -83,29 +83,7 @@ body {
     margin-top: 10px;
 }
 
-.hidden{
-    opacity: 0;
-}
 
-#exit{
-    margin-top: 20px;
-    font-family: "Special Elite";
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    background-color: #A70000;
-    font-size: 20px;
-}
-
-#exit:hover{
-    background-color: #540303;
-    color: grey;
-}
 
 #stats{
     margin-top: 30px;
@@ -150,26 +128,59 @@ body {
     font-size: 30px;
 }
 
-/* .overlay{
+.overlay{
     z-index: 1;
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color:black 0.5;
+    background-color: black;
+    opacity: 0.5;
 }
 
 .win{
+    text-align: center;
+    font-family: "Special Elite";
+    font-size: 20px;
+    color: black;
     z-index: 1;
     position: absolute;
-    background-color: white;
+    background-color: rgb(212, 212, 212);
     height: 400px;
     width: 500px;
-} */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
 
-@keyframes shake {
-    0%{transform: rotateY(0deg)};
-    25%{transform: rotateY(-30deg)};
-    50%{transform: rotateY(0deg)};
-    75%{transform: rotateY(30deg)};
-    100%{transform: rotateY(0deg)};
+}
+
+#playAgain{
+    font-family: "Special Elite";
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #A70000;
+    font-size: 20px;
+}
+
+#playAgain:hover{
+        background-color: #540303;
+    color: grey;
+}
+
+#gg{
+    font-size: 25px;
+
+}
+
+#fin{
+    font-size: 30px;
+    color: rgb(143, 0, 0);
+    width: 400px;
 }
